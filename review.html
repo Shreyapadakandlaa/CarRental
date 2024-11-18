@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - CarRental Co</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+          integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* General Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        nav {
+            background-color: #000;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        nav .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+        }
+
+        nav .nav-links a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+
+        .review-container {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 40px;
+            background-color: #111;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+
+        .review-container h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .review-form {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .review-form textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #222;
+            color: white;
+        }
+
+        .review-form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #222;
+            color: white;
+        }
+
+        .review-form .btn {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .review-form .btn:hover {
+            background-color: #e55c00;
+        }
+
+        .reviews-list {
+            margin-top: 40px;
+        }
+
+        .review-item {
+            background-color: #222;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .review-item h3 {
+            margin-bottom: 10px;
+            color: #ff6600;
+        }
+
+        .review-item p {
+            font-size: 16px;
+            color: #ddd;
+        }
+
+        .footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">CarRental</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="review.html">Reviews</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="review-container">
+            <h1>Customer Reviews</h1>
+
+            <!-- Review Form -->
+            <div class="review-form">
+                <h2>Write a Review</h2>
+                <input type="text" placeholder="Your Name">
+                <textarea placeholder="Write your review..."></textarea>
+                <button class="btn">Submit Review</button>
+            </div>
+
+            <!-- Reviews List -->
+            <div class="reviews-list">
+                <div class="review-item">
+                    <h3>John Doe</h3>
+                    <p>Amazing service! The car was clean and the staff were very helpful. Would definitely rent again.</p>
+                </div>
+
+                <div class="review-item">
+                    <h3>Jane Smith</h3>
+                    <p>Great experience overall. The prices were reasonable and the car was in great condition.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 CarRental. All Rights Reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>
